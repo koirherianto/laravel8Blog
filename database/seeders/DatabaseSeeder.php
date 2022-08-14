@@ -21,10 +21,11 @@ class DatabaseSeeder extends Seeder
         Category::factory(5)->create();
 
         User::create([
-            'name'  => 'koir herianto',
+            'name'  => 'admin',
             'username'  => 'koirherinto',
-            'email' => 'koir.harianto@gmail.com',
-            'password'  => bcrypt('maskil321')
+            'email' => 'admin@gmail.com',
+            'password'  => bcrypt('admin'),
+            'isAdmin' => true
         ]);
 
         // Category::created([

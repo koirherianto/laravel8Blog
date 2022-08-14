@@ -72,7 +72,6 @@
             .then(response => response.json())
             .then(data => slug.value = data.slug)
     });
-    console.log(slug.value+'skjfhdjk');
 
     document.addEventListener('trix-file-accept',function(e){
         e.preventDefault();
